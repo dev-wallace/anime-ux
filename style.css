@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_logo{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Usa fixed para garantir cobertura total */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.37); 
+    z-index: 1; /* Certifique-se de que os elementos acima têm z-index positivo */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: url('imgs/invertida.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 1;
+}
+
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent ;
+    transition: 0.4 ease;
+
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus{
+    border-bottom: 2px solid white;
+}
+
+
+.nav ul li a:not(:last-child) a:hover,
+.nav ul li a:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+
+}
+
+.nav ul li a.active{
+    border-bottom: 2px solid white;
+}
+
+.content{
+    width: 100%;
+    padding-top: 140px;
+}
+.content .main-text{
+    position: absolute;
+    max-width: 50em;
+    top: 10em;
+    left: 5em;
+    z-index: 2;
+    margin-bottom: 50px;
+     
+}
+.content .main-text h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+
+}
+
+.title{
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
+    font-family: 'Permanet Marker', cursive;
+}
+
+
+.paragrafo{
+    max-width: 100%;
+    width: 480px;
+    color: white;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: whi;
+    border: 1px solid white ;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
