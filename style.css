@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+  
 }
 
 html, body {
@@ -15,7 +16,7 @@ html, body {
 }
 
 .nav_logo{
-    display: block;
+    display: flex;
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
@@ -24,10 +25,10 @@ html, body {
 }
 
 body {
+    width: 100%;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    
     min-height: 100vh;
     
 }
@@ -56,20 +57,34 @@ body::before {
 }
 
 header {
-    
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 20px 100px;
     display: flex;
-    justify-content: space-between; 
-    
     z-index: 1;
+
+}
+nav{
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between; 
+    display: flex;
+}
+
+.toggle_btn{
+    color: #fff;
+    margin: auto;
+
 }
 
 
 .nav ul li{
+  
     list-style: none;
     display: inline-block;
     
@@ -81,14 +96,14 @@ header {
     margin-left: 80px;
     font-size: 20px;
     font-weight: 600;
-    border-bottom: 2px solid transparent ;
-    transition: 0.4 ease;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s ease;
 
 }
 
 .nav .toggle_btn{
     cursor: pointer;
-    display: none;
+  
 
 }
 
@@ -109,7 +124,6 @@ header {
 }
 
 .content{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +151,7 @@ header {
     line-height: 1;
     color: white;
     margin: 0px 0px 45px;
-    font-family: 'Permanet Marker', cursive;
+    font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -153,11 +167,22 @@ header {
     display: inline-block;
     text-decoration: none;
     color: black;
-    background-color: whi;
+    background-color: white;
     border: 1px solid white ;
     padding: 9px 25px;
     line-height: 1.4;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 500;
+}
+
+@media (max-width:992px){
+    .nav{
+        display: none;
+    }
+
+
+    .nav .toggle_btn{
+        display: block;
+    }
 }
