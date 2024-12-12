@@ -16,6 +16,10 @@ html, body {
 }
 
 .nav_logo{
+   
+    position: fixed;
+    left: 0;
+    margin: 0 100px;
     display: flex;
     font-size: 30px;
     font-weight: 600;
@@ -30,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    position: relative;
     
 }
 
@@ -57,32 +62,44 @@ body::before {
 }
 
 header {
+    
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
+    justify-content: flex-end;
     padding: 20px 100px;
+    height: 100px;
     display: flex;
     z-index: 1;
+    height: 30px;
+   
 
 }
-nav{
+nav {
+    position: relative;
     width: 100%;
     max-width: 1200px;
-    height: 60px;
-    padding: 20px 10px;
-    align-items: center;
-    justify-content: space-between; 
-    display: flex;
+    padding: 0 10px; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 30px; 
+    transform: translateX(135px); /* Mova 10px para a direita */
 }
 
-.toggle_btn{
+.nav .toggle_btn {
+    display: none;
     color: #fff;
-    margin: auto;
-
+    font-size: 1.5rem;
+    margin-left: 20px;
 }
 
-
+.nav ul {
+    display: flex;
+    align-items: center; 
+   
+}
 .nav ul li{
   
     list-style: none;
@@ -113,11 +130,7 @@ nav{
 }
 
 
-.nav ul li a:not(:last-child) a:hover,
-.nav ul li a:not(:last-child) a:focus{
-    border-bottom: 2px solid white;
 
-}
 
 .nav ul li a.active{
     border-bottom: 2px solid white;
@@ -176,13 +189,13 @@ nav{
     font-weight: 500;
 }
 
-@media (max-width:992px){
-    .nav{
-        display: none;
+@media (max-width: 911px) {
+    .nav ul {
+        display: none; /* Esconde os itens da lista */
     }
-
 
     .nav .toggle_btn{
         display: block;
+
     }
 }
