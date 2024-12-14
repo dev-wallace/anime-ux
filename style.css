@@ -140,6 +140,8 @@ nav {
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    justify-content: center; 
+    align-items: center; 
 }
 .dropdown li{
     padding:  0.7em;
@@ -149,6 +151,7 @@ nav {
 }
 .dropdown.open{
     height: 190px;
+   
  
 }
 
@@ -238,3 +241,12 @@ nav {
 
     }
 }
+
+@media (max-width: 576px) {
+    .dropdown{
+        left: 2em;
+        width: unset;
+    }
+
+}
+
