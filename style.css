@@ -118,6 +118,40 @@ nav {
 
 }
 
+.dropdown_links{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s ease;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 2em;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown li{
+    padding:  0.7em;
+    display: flex;
+    
+
+}
+.dropdown.open{
+    height: 190px;
+ 
+}
+
 .nav .toggle_btn{
     cursor: pointer;
   
@@ -195,6 +229,11 @@ nav {
     }
 
     .nav .toggle_btn{
+        display: block;
+
+    }
+
+    .dropdown{
         display: block;
 
     }
