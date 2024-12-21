@@ -35,6 +35,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     position: relative;
+    margin: 0; 
     
 }
 
@@ -49,7 +50,7 @@ body::before {
     z-index: 1; /* Certifique-se de que os elementos acima têm z-index positivo */
 }
 
-.wrapper {
+.carousel {
     width: 100%;
     height: 100%;
     background-color: #000;
@@ -58,8 +59,64 @@ body::before {
     position: relative;
     display: flex;
     justify-content: center;
+    padding: 20px;
 
 }
+.carousel .list{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .list .item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    inset: 0 0 0 0;
+  
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 17%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.thumbnail .item .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+
+}
+.thumbnail .item .content .title{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+
 
 header {
     
