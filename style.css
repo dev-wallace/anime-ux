@@ -47,14 +47,14 @@ body::before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.37); 
-    z-index: 1; /* Certifique-se de que os elementos acima têm z-index positivo */
+    z-index: 2; /* Certifique-se de que os elementos acima têm z-index positivo */
 }
 
 .carousel {
     width: 100%;
     height: 100%;
     background-color: #000;
-   
+    overflow: hidden;
     background-size: cover;
     position: relative;
     display: flex;
@@ -69,11 +69,12 @@ body::before {
     height: 100%; 
     object-fit: cover;
     position: absolute; 
-   inset: 0 0 0;
+   
 }
 .carousel .list{
     width: 100%;
     height: 100%;
+    
 }
 
 .carousel .list .item{
@@ -82,6 +83,7 @@ body::before {
     display: flex;
     justify-content: center;
     inset: 0 0 0 0;
+    position: absolute;
   
 }
 
@@ -137,7 +139,7 @@ header {
     padding: 20px 100px;
     height: 100px;
     display: flex;
-    z-index: 1;
+    z-index: 2;
     height: 30px;
    
 
@@ -153,7 +155,9 @@ nav {
     height: 30px; 
     transform: translateX(135px); /* Mova 10px para a direita */
 }
-
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
 .nav .toggle_btn {
     display: none;
     color: #fff;
