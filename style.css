@@ -155,9 +155,7 @@ nav {
     height: 30px; 
     transform: translateX(135px); /* Mova 10px para a direita */
 }
-.carousel .list .item:nth-child(1){
-    z-index: 1;
-}
+
 .nav .toggle_btn {
     display: none;
     color: #fff;
@@ -296,6 +294,42 @@ nav {
     font-weight: 500;
 }
 
+
+.arrows{
+    z-index:10000 ;
+    position: absolute;
+    top: 82%;
+    right: 74%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.arrows button:hover{
+    background-color: #fff;
+    color: #555;
+}
+
+.carousel .list .item:nth-child(2){
+    z-index: 1;
+}
+
+
 @media (max-width: 911px) {
     .nav ul {
         display: none; /* Esconde os itens da lista */
@@ -310,12 +344,43 @@ nav {
         display: block;
 
     }
+
+    .arrows {
+        top: 82%; 
+        right: 68%;
+        gap: 10px;
+        
+    }
+
+    .arrows button {
+        width: 30px; 
+        height: 30px;
+        font-size: medium; 
+      
+    }
 }
+
+
+
 
 @media (max-width: 576px) {
     .dropdown{
         left: 2em;
         width: unset;
+    }
+
+
+    .arrows {
+        top: 82%; 
+        right: 74%;
+        gap: 10px;
+    }
+
+    .arrows button {
+        width: 25px;
+        height: 25px;
+        font-size: small;
+      
     }
 
 }
