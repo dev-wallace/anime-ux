@@ -36,21 +36,14 @@ body {
     min-height: 100vh;
     position: relative;
     margin: 0; 
+    color: white;
     
 }
 
-body::before {
-    content: '';
-    position: fixed; /* Usa fixed para garantir cobertura total */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.37); 
-    z-index: 2; /* Certifique-se de que os elementos acima têm z-index positivo */
-}
+
 
 .carousel {
+    position: absolute; 
     width: 100%;
     height: 100%;
     background-color: #000;
@@ -63,12 +56,26 @@ body::before {
 
 }
 
+    .carousel .list .item::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.37);
+        z-index: 1;
+    }
 
 .carousel .list .item img {
     width: 100%; 
     height: 100%; 
     object-fit: cover;
     position: absolute; 
+ 
+    
+
+    
    
 }
 .carousel .list{
@@ -83,7 +90,10 @@ body::before {
     display: flex;
     justify-content: center;
     inset: 0 0 0 0;
-    position: absolute;
+    position: fixed;
+   
+   
+   
   
 }
 
@@ -130,7 +140,7 @@ body::before {
 
 
 header {
-    
+   
     width: 100%;
     position: relative;
     top: 0;
@@ -265,6 +275,7 @@ nav {
 }
 
 .title{
+    
     font-size: 60px;
     line-height: 1;
     color: white;
@@ -278,10 +289,12 @@ nav {
     width: 480px;
     color: white;
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 50px;
+    
 }
 .content .main-text a{
+    
     display: inline-block;
     text-decoration: none;
     color: black;
