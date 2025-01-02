@@ -1,16 +1,18 @@
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropdown = document.querySelector('.dropdown')
+const toggleBtns = document.querySelectorAll('.toggle_btn');
+const dropdowns = document.querySelectorAll('.dropdown');
 
+// Adicionar evento de clique para cada botão toggle
+toggleBtns.forEach((toggleBtn, index) => {
+    const dropdown = dropdowns[index];
+    const toggleBtnIcon = toggleBtn.querySelector('i');
 
-toggleBtn.onclick = function (){
-    dropdown.classList.toggle('open')
-    const isOpen = dropdown.classList.contains('open')
+    toggleBtn.onclick = function () {
+        dropdown.classList.toggle('open');
+        const isOpen = dropdown.classList.contains('open');
 
-
-    toggleBtnIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    :'fa-solid fa-bars'
-}
-
-
+        // Atualizar o ícone do botão
+        toggleBtnIcon.className = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    };
+});
