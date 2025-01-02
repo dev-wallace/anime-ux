@@ -338,7 +338,7 @@ nav {
     color: #555;
 }
 
-.carousel .list .item:nth-child(2){
+.carousel .list .item:nth-child(3){
     z-index: 1;
 }
 
