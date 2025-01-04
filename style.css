@@ -113,7 +113,11 @@ body {
     height: 220px;
     flex-shrink: 0;
     position: relative;
+    transition: ease 0.5s;
 }
+
+
+
 
 .thumbnail .item img{
     width: 100%;
@@ -136,6 +140,9 @@ body {
     font-size: 10px;
 }
 
+.carousel .thumbnail .item:hover {
+    transform: scale(1.1); 
+}
 
 
 
@@ -347,7 +354,7 @@ nav {
     opacity: 1;
     transform: translateY(50px);
    
-    animation: showContent 0.5 1s linear forwards;
+    animation: showContent 0.4 1s linear forwards;
 }
 
 
@@ -384,66 +391,6 @@ nav {
 }
 
 
-.carousel.next .thumbnail .item:nth-last-child(1){
-    overflow: hidden;
-    animation: showThumbnail .5s linear 1 forwards;
-}
-.carousel.prev .list .item img{
-    z-index: 100;
-}
-@keyframes showThumbnail{
-    from{
-        width: 0;
-        opacity: 0;
-    }
-}
-
-
-    .carousel.next .thumbnail{
-        transform: translateX(150px);
-        animation: transformThumbnail .5s linear 1 forwards;
-    }
-
-    @keyframes  transformThumbnail{
-        to{
-            transform: translateX(0);
-        }
-    }
-
-    .carousel.next .thumbnail{
-        animation: effectNext .5s linear 1 forwards;
-    }
-    
-    @keyframes effectNext{
-        from{
-            transform: translateX(140px);
-        }
-    }
-
-
-    .carousel.prev .list .item:nth-child(2){
-        z-index: 1;
-    }
-    
-    .carousel.prev .list .item:nth-child(2) img{
-        animation: outFrame 0.5s linear 1 forwards;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-       
-    }
-    @keyframes outFrame{
-        to{
-            width: 140px;
-            height: 220px;
-            bottom: 50px;
-            left: 50%;
-            border-radius: 20px;
-            opacity: 0;
-        }
-    }
-
-    
 
 @media (max-width: 911px) {
     .nav ul {

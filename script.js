@@ -21,23 +21,24 @@ toggleBtns.forEach((toggleBtn, index) => {
 const nextDom = document.getElementById('next');
 const prevDom = document.getElementById('prev');
 const ListItemDom = document.querySelector('.carousel .list');
+const thumbnailDom = document.querySelector('.carousel .thumbnail');
 
 // Função para manipular o carrossel
 function showSlider(type) {
     const items = document.querySelectorAll('.carousel .list .item');
+    const itemsThumbnails = document.querySelectorAll('.carousel .thumbnail .item');
   
-
     if (type === 'next') {
         // Move o primeiro item para o final da lista
         ListItemDom.appendChild(items[0]);
-
-
+        thumbnailDom.appendChild(itemsThumbnails[0]); 
     } else if (type === 'prev') {
         // Move o último item para o início da lista
         ListItemDom.insertBefore(items[items.length - 1], items[0]);
+        thumbnailDom.insertBefore(itemsThumbnails[itemsThumbnails.length - 1], itemsThumbnails[0]); // Movendo a thumbnail
     }
 }
 
-// Adicionar eventos de clique para os botões de navegação do carrossel
 nextDom.addEventListener('click', () => showSlider('next'));
 prevDom.addEventListener('click', () => showSlider('prev'));
+
