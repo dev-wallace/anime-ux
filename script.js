@@ -6,7 +6,7 @@ toggleBtns.forEach((toggleBtn, index) => {
     const dropdown = dropdowns[index];
     const toggleBtnIcon = toggleBtn.querySelector('i');
 
-    toggleBtn.onclick = function () {
+    toggleBtn.addEventListener('click', () => {
         dropdown.classList.toggle('open');
         const isOpen = dropdown.classList.contains('open');
 
@@ -14,29 +14,30 @@ toggleBtns.forEach((toggleBtn, index) => {
         toggleBtnIcon.className = isOpen
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars';
-    };
+    });
 });
+
+// Seleção de elementos do carrossel
 const nextDom = document.getElementById('next');
 const prevDom = document.getElementById('prev');
-const carouselDom = document.querySelector('.carousel');
 const ListItemDom = document.querySelector('.carousel .list');
-const thumbnailDom = document.querySelector('.carousel .thumbnail');
 
-nextDom.onclick = function () {
-    showSlider('next');
-};
-
+// Função para manipular o carrossel
 function showSlider(type) {
-    const itemSlider = document.querySelectorAll('.carousel .list .item');
-    const thumbnail = document.querySelectorAll('.carousel .thumbnail .item');
+    const items = document.querySelectorAll('.carousel .list .item');
+  
 
-    if (type === 'next') { // Corrigido: removido o espaço extra
-        ListItemDom.appendChild(itemSlider[0]); // Move o primeiro item para o final
-    } else if (type === 'prev') { // Implementação para o botão 'prev'
-        ListItemDom.insertBefore(itemSlider[itemSlider.length - 1], itemSlider[0]); // Move o último item para o início
+    if (type === 'next') {
+        // Move o primeiro item para o final da lista
+        ListItemDom.appendChild(items[0]);
+
+
+    } else if (type === 'prev') {
+        // Move o último item para o início da lista
+        ListItemDom.insertBefore(items[items.length - 1], items[0]);
     }
 }
 
-prevDom.onclick = function () {
-    showSlider('prev'); // Adicionada funcionalidade para o botão 'prev'
-};
+// Adicionar eventos de clique para os botões de navegação do carrossel
+nextDom.addEventListener('click', () => showSlider('next'));
+prevDom.addEventListener('click', () => showSlider('prev'));
