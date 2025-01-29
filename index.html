@@ -22,7 +22,7 @@
                     <nav class="nav">
 
                         <ul>
-                            <li><a href="#">Movie Details</a></li>
+                            <li><a href="#">Add Movie</a></li>
                             <li><a href="#">Movie List</a></li>
                             <li><a href="#">Trailer Movie</a></li>
                         </ul>
@@ -30,7 +30,7 @@
 
                         <div class="dropdown">
 
-                            <li><a class="dropdown_links" href="#">Movie Details</a></li>
+                            <li><a class="dropdown_links" href="#">Add Movie</a></li>
                             <li><a class="dropdown_links" href="#">Movie List</a></li>
                             <li><a class="dropdown_links" href="#">Trailer Movie</a></li>
 
@@ -59,7 +59,7 @@
                     <nav class="nav">
 
                         <ul>
-                            <li><a href="#">Movie Details</a></li>
+                            <li><a href="#">Add Movie</a></li>
                             <li><a href="#">Movie List</a></li>
                             <li><a href="#">Trailer Movie</a></li>
                         </ul>
@@ -67,7 +67,7 @@
 
                         <div class="dropdown">
 
-                            <li><a class="dropdown_links" href="#">Movie Details</a></li>
+                            <li><a class="dropdown_links" href="#">Add Movie</a></li>
                             <li><a class="dropdown_links" href="#">Movie List</a></li>
                             <li><a class="dropdown_links" href="#">Trailer Movie</a></li>
 
@@ -97,7 +97,7 @@
                     <nav class="nav">
 
                         <ul>
-                            <li><a href="#">Movie Details</a></li>
+                            <li><a href="#">Add Movie</a></li>
                             <li><a href="#">Movie List</a></li>
                             <li><a href="#">Trailer Movie</a></li>
                         </ul>
@@ -105,7 +105,7 @@
 
                         <div class="dropdown open">
 
-                            <li><a class="dropdown_links" href="#">Movie Details</a></li>
+                            <li><a class="dropdown_links" href="#">Add Movie</a></li>
                             <li><a class="dropdown_links" href="#">Movie List</a></li>
                             <li><a class="dropdown_links" href="#">Trailer Movie</a></li>
 
@@ -173,6 +173,56 @@
             <button id="prev"><</button>
             <button id="next">></button>
         </div>
+
+        <div class="pop-Up-Container">
+            <div class="mat-dialog-container">
+                <div class="gps-alert-box">
+                    <img src="imgs/Group 566.svg" alt="Estrela" class="icon-top-left">
+                    <img src="imgs/Group45.svg" alt="Flor" class="icon-bottom-right">
+                    <div class="form-box">
+                        <h2>Add Movie</h2>
+                    </div>
+                    <div class="card-warapper">
+                        <form>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                                <input type="text" id="Title" name="Title" required>
+                                <label for="name">Title</label>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                                <input type="text" id="Description" name="Description" required>
+                                <label for="name">Description</label>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                                <input type="text" id="Thumbnail" name="Thumbnail" required>
+                                <label for="name">Thumbnail</label>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                                <input type="text" id="BackgroundImage" name="BackgroundImage" required>
+                                <label for="name">BackgroundImage</label>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                                <input type="text" id="Logo" name="Logo" required>
+                                <label for="name">Logo</label>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="close">
+                        <button type="button" class="close-btn" id="closePopupBtn">Skip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>

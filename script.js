@@ -42,3 +42,5 @@ function showSlider(type) {
 nextDom.addEventListener('click', () => showSlider('next'));
 prevDom.addEventListener('click', () => showSlider('prev'));
 
+
+

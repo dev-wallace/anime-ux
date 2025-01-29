@@ -356,6 +356,10 @@ nav {
     animation: showContent 0.4 1s linear forwards;
 }
 
+
+
+
+
 @keyframes showContent{
     to{
         filter: blur(0);
