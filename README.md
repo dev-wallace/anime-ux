@@ -9,9 +9,13 @@ Este é um projeto desenvolvido como parte dos meus estudos de programação, on
 - Integração com **Spring Boot** para o desenvolvimento do back-end (em andamento).
 
 ## Screenshots
-![Screenshot 2024-12-13 220356](https://github.com/user-attachments/assets/a0cea6f8-9017-474a-b6f1-6b97d99f4ade)
 
- ![Screenshot 2024-12-13 220224](https://github.com/user-attachments/assets/0b3a93c0-18af-4d8a-aede-41f8d5aa49c6)
+![Screenshot 2025-01-12 132432](https://github.com/user-attachments/assets/543b2ab7-5f43-45dd-8ea9-b82d3b5c25de)
+
+ 
+![Screenshot 2025-01-12 132421](https://github.com/user-attachments/assets/fb4b60f6-0011-4867-8115-bde2cd440885)
+
+![Screenshot 2025-01-12 132410](https://github.com/user-attachments/assets/c7b6df6d-1335-481d-88ae-6df40d209771)
 
 
 ## Video do Projeto
