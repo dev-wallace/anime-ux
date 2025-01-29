@@ -388,6 +388,27 @@ nav {
         position: relative;
 
     }
+    .gps-alert-box {
+        position: relative;
+        padding: 20px;
+        text-align: center;
+    }
+    .icon-top-left {
+        position: absolute;
+        top: -44px;
+        left: -20px;
+        width: 43px;
+        height: auto;
+    }
+    
+    .icon-bottom-right {
+        position: absolute;
+        bottom: -33px;
+        right: -17px;
+        width: 43px; 
+        height: auto; 
+    }
+    
     
 
 
