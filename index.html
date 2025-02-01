@@ -22,7 +22,8 @@
                     <nav class="nav">
 
                         <ul>
-                            <li><a href="#">Add Movie</a></li>
+                            <li><a href="#" class="addMovieBtn">Add Movie</a></li>
+
                             <li><a href="#">Movie List</a></li>
                             <li><a href="#">Trailer Movie</a></li>
                         </ul>
@@ -30,7 +31,7 @@
 
                         <div class="dropdown">
 
-                            <li><a class="dropdown_links" href="#">Add Movie</a></li>
+                            <li><a class="dropdown_links" href="#" id="addMovieBtn">Add Movie</a></li>
                             <li><a class="dropdown_links" href="#">Movie List</a></li>
                             <li><a class="dropdown_links" href="#">Trailer Movie</a></li>
 
@@ -59,7 +60,7 @@
                     <nav class="nav">
 
                         <ul>
-                            <li><a href="#">Add Movie</a></li>
+                            <li><a href="#" class="addMovieBtn">Add Movie</a></li>
                             <li><a href="#">Movie List</a></li>
                             <li><a href="#">Trailer Movie</a></li>
                         </ul>
@@ -97,7 +98,7 @@
                     <nav class="nav">
 
                         <ul>
-                            <li><a href="#">Add Movie</a></li>
+                            <li><a href="#" class="addMovieBtn">Add Movie</a></li>
                             <li><a href="#">Movie List</a></li>
                             <li><a href="#">Trailer Movie</a></li>
                         </ul>
@@ -173,8 +174,10 @@
             <button id="prev"><</button>
             <button id="next">></button>
         </div>
+      <div id="overlay" class="overlay"></div>
+        <div class="pop-up-container "id="locationPopup">
+      
 
-        <div class="pop-up-container">
             <div class="mat-dialog-container">
                 <div class="gps-alert-box">
                     <img src="imgs/Group 566.svg" alt="Estrela" class="icon-top-left">
@@ -183,7 +186,7 @@
                         <h2>Add Movie</h2>
                     </div>
                     <div class="card-warapper">
-                        <form>
+                        <form id="registerForm">
                             <div class="input-box">
                                 <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
                                 <input type="text" id="Title" name="Title" required>

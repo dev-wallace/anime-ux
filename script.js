@@ -43,4 +43,35 @@ nextDom.addEventListener('click', () => showSlider('next'));
 prevDom.addEventListener('click', () => showSlider('prev'));
 
 
+// Seleciona todos os botões "Add Movie"
+const addMovieBtns = document.querySelectorAll(".addMovieBtn");
+const overlay = document.getElementById("overlay");
+const locationPopup = document.getElementById("locationPopup"); 
+const closePopupBtn = document.getElementById("closePopupBtn"); 
+
+// Função para abrir o pop-up
+function openPopup() {
+    locationPopup.classList.add("active");
+    overlay.classList.add("active");
+}
+
+// Função para fechar o pop-up
+function closePopup() {
+    locationPopup.classList.remove("active");
+    overlay.classList.remove("active");
+}
+
+// Adiciona evento de clique para todos os botões "Add Movie"
+addMovieBtns.forEach(button => {
+    button.addEventListener("click", (event) => {
+        event.preventDefault(); // Impede o redirecionamento
+        openPopup();
+    });
+});
+
+// Evento para fechar pop-up ao clicar no botão de fechar
+closePopupBtn.addEventListener("click", closePopup);
+
+// Evento para fechar pop-up ao clicar no overlay
+overlay.addEventListener("click", closePopup);
 
