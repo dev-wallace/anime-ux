@@ -364,12 +364,17 @@ nav {
    transform: translate(-50%, -50%) scale(0); 
     opacity: 0;
     max-width: 80vw;
-    width: 400px;
-    height: 570px;
+    width: 430px;
+    height: 540px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('imgs/teste.jpg');
+    background-image: url('imgs/login6.gif');
+    background-position: calc(5% - 10px);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -403,17 +408,18 @@ nav {
     }
     .icon-top-left {
         position: absolute;
-        top: 60px;
+        top: 78px;
         left: -20px;
         width: 43px;
         height: auto;
+       
     }
     
     .icon-bottom-right {
         position: absolute;
-        bottom: 49px;
+        bottom: 55px;
         right: -17px;
-        width: 43px; 
+        width: 45px; 
         height: auto; 
     }
     .card-warapper{
@@ -439,18 +445,21 @@ nav {
     .pop-up-container .form-box{
         width: 100%;
         padding: 40px;
+       
         
     
     }
     .form-box h2 {
         font-size: 2em;
-        color: #f00000; 
+        color: #ffffff; 
         text-align: center;
         top:30px ;
        position: relative;
        text-transform: uppercase;
+        margin-right: 12px;
+        right: 10px;
     }
-
+  
     .input-box{
      position: relative;
      width: 100%;
@@ -465,7 +474,7 @@ nav {
         left: 5px;
         transform: translateY(-50%);
         font-size: 1em;
-        color: rgb(255, 0, 0);
+        color: rgb(43, 74, 75);
         pointer-events: none;
         transition: .5s;
         
@@ -478,7 +487,7 @@ nav {
         outline: none;
         font-size: 1em;
         font-weight: 300;
-        color: #b61d1d;
+        color: #000000;
         padding: 0 35px 0 1px;
     
     }
@@ -486,7 +495,7 @@ nav {
         position: absolute;
         right: 8px;
         font-size: 1.2em;
-        color: aqua;
+        color: rgb(255, 255, 255);
         line-height: 57px;
 
     }
@@ -494,14 +503,14 @@ nav {
     .input-box input:focus + label,
     .input-box input:valid + label{
         top: -5px;
-        color: bisque;
+        color: rgb(17, 36, 63);
         font-size: 0.85em;
     }
 
     .btn{
         border: none;
-        background: #b61d1d;
-        color: aquamarine;
+        background: #ffffff;
+        color: rgb(112, 211, 203);
         padding: 5px;
         font-size: 18px;
         border-radius: 5px;
@@ -522,11 +531,11 @@ nav {
 
     .close-btn{
         position: absolute;
-        top: 58px;
+        top: 69px;
         right: -20PX;
         width: 43px;
         height: auto;
-        color: #cf0b0b;
+        color:  rgb(42, 65, 66);
         font-weight: 500;
         background: none;
         text-transform: uppercase;
