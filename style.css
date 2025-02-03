@@ -361,8 +361,8 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0); /* Escondido inicialmente */
-    opacity: 0;
+    /* Escondido inicialmente transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;*/
     max-width: 80vw;
     width: 400px;
     height: 500px;
@@ -431,6 +431,7 @@ nav {
     .card-login .form-box{
         width: 100%;
         padding: 40px;
+        
     }
     .form-box h2 {
         font-size: 2em;
@@ -500,6 +501,31 @@ nav {
 
     .btn:hover{
         transform: scale(1.05);
+    }
+
+    .close {
+        margin: 16px;
+
+    }
+
+    .close-btn{
+        position: absolute;
+        top: 49px;
+        right: -20PX;
+        width: 43px;
+        height: auto;
+        color: #cf0b0b;
+        font-weight: 500;
+        background: none;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        outline: none;
+        margin: 12px;
+        cursor: pointer;
+        font-size: 14px;
+
     }
     .overlay {
         position: fixed;
