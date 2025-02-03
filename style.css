@@ -361,15 +361,15 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* Escondido inicialmente transform: translate(-50%, -50%) scale(0); 
-    opacity: 0;*/
+   transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;
     max-width: 80vw;
     width: 400px;
     height: 570px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-image: url('imgs/teste.jpg');
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -411,7 +411,7 @@ nav {
     
     .icon-bottom-right {
         position: absolute;
-        bottom: -33px;
+        bottom: 49px;
         right: -17px;
         width: 43px; 
         height: auto; 
