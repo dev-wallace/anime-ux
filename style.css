@@ -365,7 +365,7 @@ nav {
     opacity: 0;*/
     max-width: 80vw;
     width: 400px;
-    height: 500px;
+    height: 570px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,15 +428,27 @@ nav {
 
 
     }
-    .card-login .form-box{
+
+  
+    .form-box{
+        width: 100%;
+        padding: 60px;
+     
+        
+    }
+    .pop-up-container .form-box{
         width: 100%;
         padding: 40px;
         
+    
     }
     .form-box h2 {
         font-size: 2em;
-        color: #ffffff; 
+        color: #f00000; 
         text-align: center;
+        top:30px ;
+       position: relative;
+       text-transform: uppercase;
     }
 
     .input-box{
@@ -510,7 +522,7 @@ nav {
 
     .close-btn{
         position: absolute;
-        top: 49px;
+        top: 58px;
         right: -20PX;
         width: 43px;
         height: auto;
