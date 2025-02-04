@@ -17,6 +17,8 @@ Este é um projeto desenvolvido como parte dos meus estudos de programação, on
 
 ![Screenshot 2025-01-12 132410](https://github.com/user-attachments/assets/c7b6df6d-1335-481d-88ae-6df40d209771)
 
+![Screenshot 2025-02-03 211711](https://github.com/user-attachments/assets/e6562222-a35d-44e7-acb7-a5ff676a8f7c)
+
 
 ## Video do Projeto
 
