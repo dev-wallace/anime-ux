@@ -44,7 +44,7 @@ prevDom.addEventListener('click', () => showSlider('prev'));
 
 
 // Seleciona todos os botões "Add Movie"
-const addMovieBtns = document.querySelectorAll(".addMovieBtn");
+const addMovieBtns = document.querySelectorAll(".dropdown_links");
 const overlay = document.getElementById("overlay");
 const locationPopup = document.getElementById("locationPopup"); 
 const closePopupBtn = document.getElementById("closePopupBtn"); 
