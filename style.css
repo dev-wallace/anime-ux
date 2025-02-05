@@ -474,7 +474,7 @@ nav {
         left: 5px;
         transform: translateY(-50%);
         font-size: 1em;
-        color: rgb(43, 74, 75);
+        color: #183153;
         pointer-events: none;
         transition: .5s;
         
