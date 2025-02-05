@@ -33,7 +33,7 @@ O front-end do **Animeux** foi desenvolvido para oferecer uma interface responsi
 
 Confira o vídeo demonstrando o funcionamento do projeto no YouTube:
 
-[Assista o vídeo aqui](https://youtu.be/NfvT7qZAN8I)
+[Assista o vídeo aqui](https://youtu.be/IZOWdnkrnuw)
 
 ## Tecnologias Utilizadas
 - **Front-end**: HTML, CSS, JS (responsivo)
