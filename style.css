@@ -575,7 +575,104 @@ nav {
 
 
 
+@media (max-width: 1401px) {
+
+    .carousel .list .item .content .title {
+        font-size: 32px; 
+    }
+
+    .carousel .list .item .content .paragrafo {
+        font-size: 17px;
+    }
+    .thumbnail{
+       
+        left: 43%;
+        
+    
+    }
+
+    .thumbnail .item{
+        width: 150px;
+        height: auto;
+    }
+    .watch-now{
+        position: relative;
+        top: -140px;
+        right: 20px;
+    }
+  .title{
+    position: relative;
+    top: -90px;
+  }
+
+    .paragrafo {
+        position: relative;
+       top: -100px;
+    }
+
+    .arrows{
+        left: 33%;
+    }
+}
+
+@media (max-width: 1300px) {
+       
+
+    .carousel .list .item .content .title {
+        font-size: 30px; 
+    }
+
+    .carousel .list .item .content .paragrafo {
+        font-size: 15px;
+    }
+    .thumbnail{
+       
+        left: 43%;
+        
+    
+    }
+
+    .thumbnail .item{
+        width: 130px;
+        height: auto;
+    }
+    .watch-now{
+        position: relative;
+        top: -140px;
+        right: 20px;
+    }
+  .title{
+    position: relative;
+    top: -90px;
+  }
+
+    .paragrafo {
+        position: relative;
+       top: -100px;
+    }
+
+    .arrows{
+        left: 33%;
+    }
+
+}
 @media (max-width: 911px) {
+    .arrows{
+        left: 28%;
+    }
+
+
+    .thumbnail .item{
+        width: 120px;
+        height: auto;
+    }
+    .carousel .list .item .content .title {
+        font-size: 32px;
+    }
+
+    .carousel .list .item .content .paragrafo {
+        font-size: 14px;
+    }
     .nav ul {
         display: none; /* Esconde os itens da lista */
     }
@@ -609,6 +706,11 @@ nav {
 
 
 @media (max-width: 576px) {
+
+    .thumbnail .item{
+        width: 100px;
+        height: auto;
+    }
     .dropdown{
         left: 2em;
         width: unset;
@@ -629,12 +731,85 @@ nav {
     }
 
 }
+@media (max-width: 500px) {
 
+    .carousel .list .item .content .title {
+        font-size: 20px; 
+    }
+
+    .carousel .list .item .content .paragrafo {
+        font-size: 12px;
+    }
+    .thumbnail{
+       
+        left: 43%;
+        
+    
+    }
+
+    .thumbnail .item{
+        width: 100px;
+        height: auto;
+        
+    }
+    .watch-now{
+        position: relative;
+        top: -140px;
+        right: 20px;
+    }
+  .title{
+    position: relative;
+    top: -90px;
+  }
+
+    .paragrafo {
+        position: relative;
+       top: -100px;
+       right: 30px;
+    }
+
+    .arrows{
+        left: 30%;
+    }   
+
+}
 @media screen and (max-width: 678px) {
-    .carousel .list .item .content{
-        padding-right: 0;
+    .carousel .list .item .content .title {
+        font-size: 20px; 
     }
-    .carousel .list .item .content .title{
-        font-size: 30px;
+
+    .carousel .list .item .content .paragrafo {
+        font-size: 12px;
     }
+    .thumbnail{
+       
+        left: 43%;
+        
+    
+    }
+
+    .thumbnail .item{
+        width: 100px;
+        height: auto;
+        
+    }
+    .watch-now{
+        position: relative;
+        top: -140px;
+        right: 20px;
+    }
+  .title{
+    position: relative;
+    top: -90px;
+  }
+
+    .paragrafo {
+        position: relative;
+       top: -100px;
+       right: 30px;
+    }
+
+    .arrows{
+        left: 30%;
+    }   
 }
