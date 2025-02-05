@@ -1,12 +1,21 @@
-# Projeto Web Responsivo com Spring Boot
+# Front-End do Projeto Animeux
 
 ## Descrição
-Este é um projeto desenvolvido como parte dos meus estudos de programação, onde apliquei conceitos de **desenvolvimento web responsivo** e **back-end com Spring Boot**. O objetivo foi criar um layout otimizado para proporcionar uma boa experiência de navegação, especialmente em dispositivos móveis.
+O front-end do **Animeux** foi desenvolvido para oferecer uma interface responsiva e interativa para exibição de filmes. A aplicação utiliza **HTML5**, **CSS3** e **JavaScript** para proporcionar uma experiência de usuário rica, com um carrossel dinâmico, pop-up para cadastro de filmes e um menu responsivo.
+
+## Funcionalidades
+- **Carrossel Interativo**: Exibição dinâmica de filmes com animações suaves.
+- **Formulário "Add Movie" em Pop-Up**: Permite o cadastro de novos filmes diretamente a partir da interface.
+- **Menu Responsivo**: Navegação otimizada para dispositivos móveis, com toggle que exibe e oculta os itens do menu.
+- **Integração com API RESTful**: O front-end se comunica com o back-end para enviar e receber dados via `fetch()` (integração em andamento).
+
+
 
 ### O que foi desenvolvido:
 - Layout responsivo que se adapta a diferentes tamanhos de tela.
 - Navegação otimizada para dispositivos móveis.
 - Integração com **Spring Boot** para o desenvolvimento do back-end (em andamento).
+- JavaScript incluindo Fetch API e manipulação do DOM (em andamento).
 
 ## Screenshots
 
@@ -27,7 +36,7 @@ Confira o vídeo demonstrando o funcionamento do projeto no YouTube:
 [Assista o vídeo aqui](https://youtu.be/NfvT7qZAN8I)
 
 ## Tecnologias Utilizadas
-- **Front-end**: HTML, CSS (responsivo)
+- **Front-end**: HTML, CSS, JS (responsivo)
 - **Back-end**: Spring Boot (em andamento)
 - **Banco de Dados**: PostgreSQL (planejado para implementação futura)
 
@@ -42,5 +51,6 @@ Confira o vídeo demonstrando o funcionamento do projeto no YouTube:
 ## Contribuições
 Fique à vontade para contribuir com sugestões ou melhorias para o projeto. Basta abrir uma *issue* ou enviar um *pull request*.
 
-## Licença
-Este projeto é de código aberto, distribuído sob a licença MIT.
+
+Esse README foi elaborado para apresentar o front-end do projeto de forma clara e completa, com espaço para capturas de tela e um vídeo de demonstração. Sinta-se à vontade para personalizar os caminhos das imagens, links e demais informações conforme sua necessidade.
+
