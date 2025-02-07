@@ -216,9 +216,9 @@ nav {
 .dropdown{
     display: none;
     position: absolute;
-    right: 2em;
+    right: 10px;
     height: 0;
-    top: 60px;
+    top: 50px;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -657,6 +657,12 @@ nav {
 
 }
 @media (max-width: 911px) {
+
+    .dropdown{
+        width: 260px;
+    }
+
+
     .arrows{
         left: 28%;
     }
@@ -705,7 +711,9 @@ nav {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
+
+
 
     .thumbnail .item{
         width: 100px;
@@ -774,6 +782,13 @@ nav {
 
 }
 @media screen and (max-width: 678px) {
+
+    
+ 
+    .dropdown_links{
+        font-size: 15px;
+    }
+
     .carousel .list .item .content .title {
         font-size: 20px; 
     }
