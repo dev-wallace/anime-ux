@@ -592,7 +592,7 @@ nav {
     }
 
     .thumbnail .item{
-        width: 150px;
+        width: 120px;
         height: auto;
     }
     .watch-now{
@@ -633,7 +633,7 @@ nav {
     }
 
     .thumbnail .item{
-        width: 130px;
+        width: 110px;
         height: auto;
     }
     .watch-now{
@@ -669,7 +669,7 @@ nav {
 
 
     .thumbnail .item{
-        width: 120px;
+        width: 100px;
         height: auto;
     }
     .carousel .list .item .content .title {
@@ -716,7 +716,7 @@ nav {
 
 
     .thumbnail .item{
-        width: 100px;
+        width: 80px;
         height: auto;
     }
     .dropdown{
@@ -756,7 +756,7 @@ nav {
     }
 
     .thumbnail .item{
-        width: 100px;
+        width: 70px;
         height: auto;
         
     }
@@ -804,7 +804,7 @@ nav {
     }
 
     .thumbnail .item{
-        width: 100px;
+        width: 60px;
         height: auto;
         
     }
